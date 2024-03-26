@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --p-color: #38bdf8;
+  --s-color: #0ea5e9;
+  --a-color: #f472b6;
+  --h-color: #F9AF05;
+  --b-color: #f8fafc;
+  --t-color: #111827;
+  --n-color: #ffffff;
+  --p-font: "Montserrat", sans-serif;
+  --s-font: "Roboto", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-cont {
+  padding: 50px 100px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  /* grid-template-columns: 450px 250px 250px 230px; */
+  justify-content: space-between; 
+}
+
+
+.f-flex {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-evenly;
+}
+
+.logo-cont {
+  display: flex;
+  align-items: top;
+}
+
+.logo-cont :nth-child(1) {
+  padding-right: 10px;
+}
+
+.logo-cont h1 {
+  padding-left: 20px;
+}
+
+.footer-logo a {
+  color: var(--t-color);
+  font-family: var(--s-font);
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.f-logo {
+  height: 120px;
+}
+
+
+.footer-logo p {
+  font-family: var(--s-font);
+  color: var(--t-color);
+  font-size: 18px;
+  line-height: 1.5;
+  width: 500px;
+  padding: 10px 50px 0 0px;
+}
+
+.footer-logo a img {
+  margin-top: 10px;
+  padding-inline-end: 10px;
+}
+
+.logo-cont a img {
+  margin: 0;
+}
+
+.footer-nav h1, .footer-service h1, .footer-team h1 {
+  font-family: var(--p-font);
+  font-size: 30px;
+  color: var(--t-color);
+  margin-bottom: 10px;
+}
+
+.footer-team, .footer-service, .footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+
+.footer-team nav ul li, .footer-service nav ul li, .footer-nav nav ul li {
+  list-style: none;
+  padding-block-end: 10px;
+}
+
+.footer-team nav ul li a, .footer-service nav ul li a, .footer-nav nav ul li a  {
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--s-color);
+  transition-duration: 0.3s;
+  font-family: var(--s-font);
+}
+
+.footer-team nav ul li a:hover, .footer-service nav ul li a:hover, .footer-nav nav ul li a:hover  {
+  color: var(--a-color);
+  transition-duration: 0.3s;
+
+}
+
+.footer-team nav ul li a:focus, .footer-service nav ul li a:focus, .footer-nav nav ul li a:focus  {
+  color: var(--s-color);
+
+}
+
+.footer-cont hr {
+  width: 100%;
+  background-color: var(--t-color);
+  height: 3px;
+  border: none;
+  margin-top: 10px;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0 0 0 ;
+}
+
+.footer-bottom span {
+  font-family: var(--p-font);
+  font-size: 20px;
+  color: var(--t-color);
+}
+
+.footer-bottom span a {
+  color: var(--t-color);
+}
+
+@media only screen and (max-width: 1280px){
+  .footer-top {
+    display: block;
+  }
+
+  .footer-cont{
+    padding: 50px 80px;
+  }
+
+  .f-flex {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+  }
+
+  
+.footer-team, .footer-service, .footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer-team, .footer-service, .footer-nav {
+  margin-top: 20px;
+}
+}
+
+@media only screen and (max-width: 1024px){
+  .footer-cont {
+    padding: 50px 60px;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  .footer-cont {
+    padding: 50px 40px;
+  }
+
+  
+.footer-team nav ul li a, .footer-service nav ul li a, .footer-nav nav ul li a  {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: var(--s-font);
+}
+
+    
+.footer-team, .footer-service, .footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+}
+
+@media only screen and (max-width: 640px){
+  .footer-cont {
+    padding: 50px 20px;
+  }
+
+  .f-flex {
+    grid-template-columns: 100%;
+  }
+
+      
+.footer-team, .footer-service, .footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
+.logo-cont a img {
+  height: 80px;
+}
+
+.logo-cont a{
+  font-size: 30px;
+}
+
+.footer-logo p {
+  width: fit-content;
+}
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --p-color: #38bdf8;
+  --s-color: #0ea5e9;
+  --a-color: #f472b6;
+  --h-color: #F9AF05;
+  --bh2-color: #dc9d09;
+  --b-color: #f8fafc;
+  --t-color: #111827;
+  --n-color: #ffffff;
+  --p-font: "Montserrat", sans-serif;
+  --s-font: "Roboto", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-btn1, .my-btn2 {
+  font-family: var(--p-font);
+  font-size: 18px;
+  transition-duration: 0.3s;
+  border-radius: 5px; 
+  font-weight: 600;
+  border: none;
+  cursor: pointer ;
+  padding: 10px 25px;
+}
+
+.my-btn1 {
+  background-color: var(--p-color);
+  color: var(--n-color) !important;
+}
+
+.my-btn1:hover {
+  background-color: var(--a-color);
+  transition-duration: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.241);
+}
+
+.my-btn1:focus {
+  background-color: var(--bh-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.241);
+}
+
+.my-btn3 {
+  background-color: transparent;
+  color: var(--n-color) !important;
+  border: none;
+  font-family: var(--p-font);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.my-btn3:hover {
+  color: var(--a-color);
+  transition-duration: 0.3s;
+}
+
+.my-btn3:focus {
+  color: var(--t-color);
+}
+
+.my-btn2 {
+  background-color: var(--h-color);
+  color: var(--t-color) !important;
+}
+
+.my-btn2:hover {
+  background-color: var(--a-color);
+  transition-duration: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.241);
+}
+
+.my-btn2:focus {
+  background-color: var(--bh2-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.241);
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .my-btn1, .my-btn2 {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .my-btn1:hover, .my-btn2:hover {
+    background-color: var(--a-color);
+  }
+}
