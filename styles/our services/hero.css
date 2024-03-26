@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --p-color: #38bdf8;
+  --s-color: #0ea5e9;
+  --a-color: #f472b6;
+  --h-color: #F9AF05;
+  --b-color: #f8fafc;
+  --t-color: #111827;
+  --n-color: #ffffff;
+  --p-font: "Montserrat", sans-serif;
+  --s-font: "Roboto", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.hero-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--p-color);
+  padding: 50px 0;
+  height: 300px;
+}
+
+.hero-cont h1 {
+  font-family: var(--p-font);
+  font-size: 60px;
+  color: var(--t-color);
+  text-align: center;
+
+}
+
+.hero-cont p {
+  font-family: var(--s-font);
+  font-size: 18px;
+  color: var(--t-color);
+  padding: 10px 300px;
+  text-align: center;
+}
+
+
+
+
+@media only screen and (max-width:1280px){
+  .hero-cont p {
+    padding: 10px 200px;
+  }
+}
+
+@media only screen and (max-width:1024px){
+  .hero-cont h1 {
+    font-size: 50px;
+  }
+ 
+  .hero-cont p {
+    padding: 10px 100px;
+  }
+}
+
+@media only screen and (max-width:770px){
+  .hero-cont h1 {
+    font-size: 40px;
+  }
+ 
+  .hero-cont p {
+    padding: 10px 60px;
+  }
+}
+
+@media only screen and (max-width:640px){
+  .hero-cont {
+    padding: 50px 20px;
+  }
+
+  .hero-cont h1 {
+    text-align: center;
+  }
+
+  .hero-cont p {
+    padding: 10px 20px;
+  }
+}
