@@ -58,7 +58,7 @@
 }
 
 .f-logo {
-  height: 120px;
+  height: 100px;
 }
 
 
@@ -226,5 +226,20 @@
 
 .footer-logo p {
   width: fit-content;
+  text-align: center;
+  padding: 10px 0 10px 0;
 }
+
+.footer-soc {
+  text-align: center;
+}
+
+.footer-logo {
+  justify-content: center;
+}
+
+.logo-cont {
+  justify-content: center;
+}
+
 }
