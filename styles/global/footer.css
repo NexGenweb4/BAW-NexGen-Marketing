@@ -20,6 +20,7 @@
 
 .footer-cont {
   padding: 50px 100px;
+  background-color: var(--t-color);
 }
 
 .footer-top {
@@ -50,7 +51,7 @@
 }
 
 .footer-logo a {
-  color: var(--t-color);
+  color: var(--h-color);
   font-family: var(--s-font);
   font-size: 40px;
   text-decoration: none;
@@ -64,7 +65,7 @@
 
 .footer-logo p {
   font-family: var(--s-font);
-  color: var(--t-color);
+  color: var(--n-color);
   font-size: 18px;
   line-height: 1.5;
   width: 500px;
@@ -80,10 +81,34 @@
   margin: 0;
 }
 
+.footer-soc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 5px;
+  background-color: transparent;
+}
+
+.footer-soc img {
+  height: 60px;
+  border-radius: 360px;
+  transition-duration: 0.3s;
+  padding: 0 !important;
+  margin-inline-end: 10px;
+  background-color: transparent;
+}
+
+.footer-soc img:hover {
+  box-shadow: 0px 0px 20px rgba(183, 31, 243, 0.568);
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
+}
+
 .footer-nav h1, .footer-service h1, .footer-team h1 {
   font-family: var(--p-font);
   font-size: 30px;
-  color: var(--t-color);
+  color: var(--h-color);
   margin-bottom: 10px;
 }
 
@@ -232,6 +257,7 @@
 
 .footer-soc {
   text-align: center;
+  justify-content: center;
 }
 
 .footer-logo {

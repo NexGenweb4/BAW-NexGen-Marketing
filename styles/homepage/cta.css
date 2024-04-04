@@ -1,11 +1,24 @@
 .cta-cont {
-  background-color: var(--p-color);
-
+  background-image: url("\\assestes/ctabg.svg");
+  background-size: cover;
+  background-position: 0px -240px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.cta-cont::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 179, 232, 0.593); /* Adjust the color and opacity as needed */
+  z-index: 0;
 }
 
 .cta-cont h1 {
@@ -15,6 +28,7 @@
   font-weight: bolder;
   text-align: center;
   margin-bottom: 15px;
+  z-index: 1;
 }
 
 
@@ -30,6 +44,8 @@
   margin: 0 auto;
   cursor: pointer;
   transition-duration: 0.3s;
+  z-index: 2;
+  position: relative;
 }
 
 .my-btn4:hover {
@@ -40,4 +56,28 @@
 
 .my-btn4:focus {
   background-color: var(--b-color);
+}
+
+@media only screen and (max-width: 1280px){
+  .cta-cont {
+    background-position: 0 -160px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .cta-cont {
+    background-position: 0 -100px;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  .cta-cont {
+    background-position: 0 -80px;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .cta-cont {
+    background-position: center 0px;
+  }
 }

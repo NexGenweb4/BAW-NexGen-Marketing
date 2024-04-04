@@ -13,6 +13,11 @@
   --s-font: "Roboto", sans-serif;
 }
 
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -59,6 +64,7 @@
 .my-btn3:hover {
   color: var(--a-color);
   transition-duration: 0.3s;
+  text-decoration: underline;
 }
 
 .my-btn3:focus {

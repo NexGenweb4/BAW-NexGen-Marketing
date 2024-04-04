@@ -19,6 +19,9 @@
   box-sizing: border-box;
 }
 
+header{
+  height: 100px;
+}
 
 .header-cont {
   padding: 0 88px 0 100px;
@@ -26,6 +29,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  top: -100px;
+  background-color: var(--t-color);
 }
 
 .header-logo {
@@ -43,6 +49,8 @@
 
 .header-logo a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo img {
@@ -63,6 +71,7 @@
   font-family: var(--p-font);
   color: var(--s-color);
   font-size: 18px;
+  font-weight: 600;
   text-decoration: none;
   transition-duration: 0.3s;
 }
@@ -190,6 +199,7 @@
   
   .res-header nav {
     padding: 5px 50px 20px 60px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.347);
   }
 }
 
@@ -220,6 +230,7 @@
   
   .res-header nav {
     padding: 5px 50px 20px 20px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.347);
   }
 
   .res-header nav ul li a:focus {

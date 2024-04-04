@@ -50,12 +50,9 @@
 }
 
 .social-icon img {
-  height: 30px;
+  height: 40px;
   padding-inline-end: 10px;
-}
-
-.fac-icon {
-  height: 35px !important;
+  margin-top: 10px;
 }
 
 .social-icon {

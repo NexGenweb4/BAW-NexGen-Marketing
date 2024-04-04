@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --p-color: #38bdf8;
+  --s-color: #0ea5e9;
+  --a-color: #f472b6;
+  --h-color: #F9AF05;
+  --b-color: #f8fafc;
+  --t-color: #111827;
+  --n-color: #ffffff;
+  --p-font: "Montserrat", sans-serif;
+  --s-font: "Roboto", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.contact-cont {
+  padding: 50px 100px;
+  width: 100%;
+}
+
+.form-cont {
+ margin: 0 auto;
+  width: 50%;
+}
+
+.form-cont input, textarea {
+  display: block;
+  width: 100%;
+  font-family: var(--p-font);
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: var(--t-color);
+  border: 2px solid var(--p-color);
+  background-color: var(--b-color);
+  border-radius: 5px;
+  margin-block-end: 20px;
+}
+
+.form-cont label {
+  font-family: var(--p-font);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--t-color);
+}
+
+.form-cont input:focus, .form-cont textarea:focus {
+  outline-color: var(--a-color);
+}
+
+.form-cont h1, .social-contact h1, .whats-chat h1 {
+  font-family: var(--p-font);
+  font-size: 35px;
+  color: var(--p-color);
+  padding-bottom: 20px;
+}
+
+.whats-chat {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.whats-chat img {
+  height: 100px;
+  transition-duration: 0.3s;
+  border-radius: 360px;
+}
+
+.social-contact {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+
+}
+
+.social-contact img {
+  height: 100px;
+  border-radius: 360px;
+  transition-duration: 0.3s;
+}
+
+.social-contact img:hover ,.whats-chat img:hover {
+  box-shadow: 0px 0px 30px rgba(183, 31, 243, 0.568);
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
+
+}
+
+
+@media only screen and (max-width: 1280px){
+  .contact-cont {
+    padding: 50px 80px ;
+  }
+
+  .form-cont{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 1024px){
+  .contact-cont {
+    padding: 50px 60px ;
+  }
+
+  .form-cont{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .whats-chat, .social-contact {
+    width: 80%;
+  } 
+}
+
+
+@media only screen and (max-width: 770px){
+  .contact-cont {
+    padding: 50px 40px ;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 640px){
+  .contact-cont {
+    padding: 50px 20px ;
+  }
+
+  .form-cont{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .whats-chat, .social-contact {
+    width: 95%;
+  } 
+
+  .whats-chat img, .social-contact img {
+    height: 60px;
+  }
+}

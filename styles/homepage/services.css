@@ -61,6 +61,13 @@
   position: relative;
   border-radius: 5px;
   transition-duration: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-1 {
+  translate: 0px 0px;
 }
 
 .ser-grid div:hover {

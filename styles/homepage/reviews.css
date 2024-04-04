@@ -74,8 +74,13 @@
 .rev-box:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.355);
   transition-duration: 0.3s;
-  scale: 1.5;
-  transform: translateX(-100px);
+  /* scale: 1.5; */
+  /* transform: translateX(-100px); */
+}
+
+.r-box2{
+  /* translate: 0 -100px ; */
+
 }
 
 .rev-box div:nth-child(1) {

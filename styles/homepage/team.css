@@ -35,8 +35,9 @@
 
 .team-head p {
   font-family: var(--s-font);
-  font-size: 16px;
+  font-size: 18px;
   color: var(--t-color);
+  line-height: 1.3;
 
 }
 
@@ -83,7 +84,19 @@
   font-family: var(--p-font);
   font-size: 20px;
   color: var(--t-color);
-  padding: 0px 0 10px 0;
+  padding: 0px 0 5px 0;
+}
+
+.team-soc {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.team-soc img {
+  height: 40px;
+  padding-inline-end: 5px;
 }
 
 
